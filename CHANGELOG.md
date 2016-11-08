@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.1
+
+- Updated unit tests for Swift 3
+
+## 2.0.0
+
+- Nest model structs instead of using underscore
+- Swift 3 compatible
+
 ## 1.1.2
 
 - Added @testable import to unit test files

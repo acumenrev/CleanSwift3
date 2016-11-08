@@ -11,11 +11,19 @@
 
 import UIKit
 
-struct ___FILEBASENAMEASIDENTIFIER___Request {
-}
+struct ___FILEBASENAMEASIDENTIFIER___ {
+  struct Something {
 
-struct ___FILEBASENAMEASIDENTIFIER___Response {
-}
+    struct Request {
 
-struct ___FILEBASENAMEASIDENTIFIER___ViewModel {
+    }
+
+    struct Response {
+
+    }
+
+    struct ViewModel {
+    
+    }
+  }
 }

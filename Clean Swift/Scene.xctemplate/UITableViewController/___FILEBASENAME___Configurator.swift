@@ -11,12 +11,12 @@
 
 import UIKit
 
-// MARK: Connect View, Interactor, and Presenter
+// MARK: - Connect View, Interactor, and Presenter
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        router.passDataToNextScene(segue: segue)
-    }
+    router.passDataToNextScene(segue: segue)
+  }
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
@@ -26,16 +26,17 @@ extension ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER__
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
-  // MARK: Object lifecycle
+  // MARK: - Object lifecycle
+  
+  static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
+  
+  private init() {
 
-  static let sharedInstance : ___FILEBASENAMEASIDENTIFIER___Configurator = {
-        ___FILEBASENAMEASIDENTIFIER___Configurator()
-    }()
+  }
   
-  // MARK: Configuration
+  // MARK: - Configuration
   
-  func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController)
-  {
+  func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
     let router = ___FILEBASENAMEASIDENTIFIER___Router()
     router.viewController = viewController
     
