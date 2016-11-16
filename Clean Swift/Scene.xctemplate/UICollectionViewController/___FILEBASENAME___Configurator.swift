@@ -13,11 +13,6 @@ import UIKit
 
 // MARK: - Connect View, Interactor, and Presenter
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    router.passDataToNextScene(segue: segue)
-  }
-}
 
 extension ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
 }

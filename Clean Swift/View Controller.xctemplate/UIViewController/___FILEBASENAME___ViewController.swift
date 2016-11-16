@@ -57,3 +57,10 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
     // nameTextField.text = viewModel.name
   }
 }
+
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    router.passDataToNextScene(segue: segue)
+  }
+}
+
