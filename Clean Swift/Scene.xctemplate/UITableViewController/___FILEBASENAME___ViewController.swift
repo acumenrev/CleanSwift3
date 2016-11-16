@@ -27,13 +27,16 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewController, ___FI
   
   override func awakeFromNib() {
     super.awakeFromNib()
+    /*
     ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(viewController: self)
+    */
   }
   
   // MARK: - View lifecycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(viewController: self)
     doSomethingOnLoad()
   }
   
