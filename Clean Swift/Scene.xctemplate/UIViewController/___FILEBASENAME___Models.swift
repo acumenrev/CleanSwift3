@@ -12,9 +12,7 @@
 import UIKit
 
 struct ___FILEBASENAMEASIDENTIFIER___ {
-  struct Something {
-
-    struct Request {
+  struct Request {
 
     }
 
@@ -25,5 +23,4 @@ struct ___FILEBASENAMEASIDENTIFIER___ {
     struct ViewModel {
     
     }
-  }
 }

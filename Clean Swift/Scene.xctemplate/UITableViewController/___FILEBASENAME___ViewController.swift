@@ -12,11 +12,11 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
-  func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel)
+  func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.ViewModel)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
+  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request)
 }
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
@@ -45,13 +45,13 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UITableViewController, ___FI
   func doSomethingOnLoad() {
     // NOTE: Ask the Interactor to do some work
     
-    let request = ___FILEBASENAMEASIDENTIFIER___.Something.Request()
+    let request = ___FILEBASENAMEASIDENTIFIER___.Request()
     output.doSomething(request: request)
   }
   
   // MARK: - Display logic
   
-  func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.Something.ViewModel) {
+  func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.ViewModel) {
     // NOTE: Display the result from the Presenter
     
     // nameTextField.text = viewModel.name

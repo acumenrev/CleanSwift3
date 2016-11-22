@@ -12,11 +12,11 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request)
+  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-  func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Something.Response)
+  func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Response)
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
@@ -25,7 +25,7 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___In
   
   // MARK: - Business logic
   
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Something.Request) {
+  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request) {
     // NOTE: Create some Worker to do the work
     
     worker = ___FILEBASENAMEASIDENTIFIER___Worker()
@@ -33,7 +33,7 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___In
     
     // NOTE: Pass the result to the Presenter
     
-    let response = ___FILEBASENAMEASIDENTIFIER___.Something.Response()
+    let response = ___FILEBASENAMEASIDENTIFIER___.Response()
     output.presentSomething(response: response)
   }
 }
