@@ -12,7 +12,8 @@
 import UIKit
 
 struct ___FILEBASENAMEASIDENTIFIER___ {
-  struct Request {
+  	
+  	struct Request {
 
     }
 

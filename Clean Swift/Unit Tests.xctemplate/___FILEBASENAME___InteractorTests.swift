@@ -13,36 +13,36 @@
 import XCTest
 
 class ___FILEBASENAMEASIDENTIFIER___InteractorTests: XCTestCase {
-  // MARK: - Subject under test
-  
-  var sut: ___FILEBASENAMEASIDENTIFIER___Interactor!
-  
-  // MARK: - Test lifecycle
-  
-  override func setUp() {
-    super.setUp()
-    setup___FILEBASENAMEASIDENTIFIER___Interactor()
-  }
-  
-  override func tearDown() {
-    super.tearDown()
-  }
-  
-  // MARK: - Test setup
-  
-  func setup___FILEBASENAMEASIDENTIFIER___Interactor() {
-    sut = ___FILEBASENAMEASIDENTIFIER___Interactor()
-  }
-  
-  // MARK: - Test doubles
-  
-  // MARK: - Tests
-  
-  func testSomething() {
-    // Given
+    // MARK: - Subject under test
     
-    // When
+    var sut: ___FILEBASENAMEASIDENTIFIER___Interactor!
     
-    // Then
-  }
+    // MARK: - Test lifecycle
+    
+    override func setUp() {
+        super.setUp()
+        setup___FILEBASENAMEASIDENTIFIER___Interactor()
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+    }
+    
+    // MARK: - Test setup
+    
+    func setup___FILEBASENAMEASIDENTIFIER___Interactor() {
+        sut = ___FILEBASENAMEASIDENTIFIER___Interactor()
+    }
+    
+    // MARK: - Test doubles
+    
+    // MARK: - Tests
+    
+    func testSomething() {
+        // Given
+        
+        // When
+        
+        // Then
+    }
 }

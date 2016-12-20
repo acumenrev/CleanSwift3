@@ -12,28 +12,29 @@
 import UIKit
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request)
+    func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request)
 }
 
 protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
-  func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Response)
+    func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Response)
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-  var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput!
-  var worker: ___FILEBASENAMEASIDENTIFIER___Worker!
-  
-  // MARK: - Business logic
-  
-  func doSomething(request: ___FILEBASENAMEASIDENTIFIER___.Request) {
-    // NOTE: Create some Worker to do the work
+    var output: TestInteractorOutput!
+    var worker: TestWorker!
     
-    worker = ___FILEBASENAMEASIDENTIFIER___Worker()
-    worker.doSomeWork()
+    // MARK: - Business logic
     
-    // NOTE: Pass the result to the Presenter
-    
-    let response = ___FILEBASENAMEASIDENTIFIER___.Response()
-    output.presentSomething(response: response)
-  }
+    func doSomething(request: Test.Request) {
+        // NOTE: Create some Worker to do the work
+
+        worker = TestWorker()
+      
+        worker.doSomeWork()
+      
+        // NOTE: Pass the result to the Presenter
+      
+        let response = Test.Response()
+        output.presentSomething(response: response)
+    }
 }
