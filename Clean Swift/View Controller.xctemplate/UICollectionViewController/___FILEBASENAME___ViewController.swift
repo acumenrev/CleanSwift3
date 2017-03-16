@@ -22,38 +22,35 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UICollectionViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
     var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
-    
+
     // MARK: - Object lifecycle
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        /*
         ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(viewController: self)
-        */
     }
-    
+
     // MARK: - View lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        ___FILEBASENAMEASIDENTIFIER___Configurator.sharedInstance.configure(viewController: self)
         doSomethingOnLoad()
     }
-    
+
     // MARK: - Event handling
-    
+
     func doSomethingOnLoad() {
         // NOTE: Ask the Interactor to do some work
-        
+
         let request = ___FILEBASENAMEASIDENTIFIER___.Request()
         output.doSomething(request: request)
     }
-    
+
     // MARK: - Display logic
-    
+
     func displaySomething(viewModel: ___FILEBASENAMEASIDENTIFIER___.ViewModel) {
         // NOTE: Display the result from the Presenter
-        
+
         // nameTextField.text = viewModel.name
     }
 }
