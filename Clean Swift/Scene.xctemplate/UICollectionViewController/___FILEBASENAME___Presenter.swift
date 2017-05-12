@@ -20,14 +20,14 @@ protocol ___FILEBASENAMEASIDENTIFIER___PresenterOutput: class {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___PresenterInput {
-    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput!
-	  
+    weak var output: ___FILEBASENAMEASIDENTIFIER___PresenterOutput?
+
     // MARK: - Presentation logic
-	  
-	  
+
+
     func presentSomething(response: ___FILEBASENAMEASIDENTIFIER___.Response) {
 	    // NOTE: Format the response from the Interactor and pass the result back to the View Controller
 	    let viewModel = ___FILEBASENAMEASIDENTIFIER___.ViewModel()
-	    output.displaySomething(viewModel: viewModel)
+	    output?.displaySomething(viewModel: viewModel)
     }
 }

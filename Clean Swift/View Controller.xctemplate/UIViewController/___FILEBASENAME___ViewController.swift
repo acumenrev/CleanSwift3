@@ -20,8 +20,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___ViewControllerInput {
-    var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput!
-    var router: ___FILEBASENAMEASIDENTIFIER___Router!
+    var output: ___FILEBASENAMEASIDENTIFIER___ViewControllerOutput?
+    var router: ___FILEBASENAMEASIDENTIFIER___Router?
 
     // MARK: - Object lifecycle
 
@@ -43,7 +43,7 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
         // NOTE: Ask the Interactor to do some work
 
         let request = ___FILEBASENAMEASIDENTIFIER___.Request()
-        output.doSomething(request: request)
+        output?.doSomething(request: request)
     }
 
     // MARK: - Display logic
@@ -57,6 +57,6 @@ class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBAS
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ___FILEBASENAMEASIDENTIFIER___PresenterOutput {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        router.passDataToNextScene(segue: segue)
+        router?.passDataToNextScene(segue: segue)
     }
 }

@@ -20,8 +20,8 @@ protocol ___FILEBASENAMEASIDENTIFIER___InteractorOutput {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___InteractorInput {
-    var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput!
-    var worker: ___FILEBASENAMEASIDENTIFIER___Worker!
+    var output: ___FILEBASENAMEASIDENTIFIER___InteractorOutput?
+    var worker: ___FILEBASENAMEASIDENTIFIER___Worker?
 
     // MARK: - Business logic
 
@@ -30,11 +30,11 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___In
 
         worker = ___FILEBASENAMEASIDENTIFIER___Worker()
 
-        worker.doSomeWork()
+        worker?.doSomeWork()
 
         // NOTE: Pass the result to the Presenter
 
         let response = ___FILEBASENAMEASIDENTIFIER___.Response()
-        output.presentSomething(response: response)
+        output?.presentSomething(response: response)
     }
 }
